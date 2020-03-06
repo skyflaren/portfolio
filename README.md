@@ -1,2 +1,2 @@
 # web
-a photography, portfolio
+a photography portfolio
