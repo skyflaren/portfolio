@@ -1,0 +1,29 @@
+:root {
+    /* grey */
+    --gry1: #454242;
+    /* grey */
+    --gry2: #cfcbcb;
+    /* grey */
+    --gry3: #f4f4f4;
+    
+    /* dark red */
+    --red1: #854435;
+    /* mid red */
+    --red2: #cd5a42;
+    /* light red */
+    --red1: #e1997c;
+}
+
+.navbar{
+    font-family: 'Raleway', sans-serif;
+    background-color: var(--red2);
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.text{
+    font-family: 'Raleway', sans-serif;
+    color: white;
+}
