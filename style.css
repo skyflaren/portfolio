@@ -1,9 +1,12 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,300i,400,700,900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,400i,700,900&display=swap');
+
 :root {
-    /* grey */
+    /* dark grey */
     --gry1: #454242;
-    /* grey */
+    /* mid grey */
     --gry2: #cfcbcb;
-    /* grey */
+    /* light grey */
     --gry3: #f4f4f4;
     
     /* dark red */
@@ -11,19 +14,70 @@
     /* mid red */
     --red2: #cd5a42;
     /* light red */
-    --red1: #e1997c;
+    --red3: #e1997c;
 }
 
 .navbar{
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     background-color: var(--red2);
     width: 100%;
-    margin: 0;
-    padding: 0;
-    border: 0;
+    height: 70px;
+    padding-right: 40px;
+    
+    display: flex;
+    -webkit-flex-direction: row-reverse;
+    flex-direction: row-reverse;
 }
 
+.item-navbar{
+    font-weight: 300;
+    color: var(--gry3);
+    padding: 25px;
+}
+
+.boutique-navbar{
+    font-weight: 700;
+    color: var(--gry3);
+    padding: 25px;
+}
+
+.home-navbar{
+    font-weight: 300;
+    color: var(--gry3);
+    
+    position: absolute;
+    left: 10px;
+    padding: 25px;
+}
+
+
+
+
+
+
+
+
 .text{
-    font-family: 'Raleway', sans-serif;
     color: white;
+    
+}
+
+body{
+    margin: 0;
+}
+
+.all{
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+a{
+    text-decoration: none;
+}
+a:link, a:visited {
+    text-decoration-line: none;
+}
+a:hover {
+    text-decoration-line: none;
+    color: var(--gry2);
 }
