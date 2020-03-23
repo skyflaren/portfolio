@@ -137,16 +137,20 @@ a{
 
 
 
-
-
-
-
-
 .home-logo{
+    order:1;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+.home-logo img {
     height: 40px;
     padding: 15px 20px;
-    position: absolute;
-    left: 10px;
+    /*position: absolute;*/
+    /*left: 10px;*/
 }
 
 .home-logo:hover{
