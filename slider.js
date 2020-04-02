@@ -1,7 +1,6 @@
 let slider = document.getElementById("slider");
 let nav = document.getElementById("navbar");
 
-// prevent initial NaN
 slider.style.width = "6px";
 
 nav.addEventListener("mouseenter",function (evt) {
@@ -112,7 +111,6 @@ nav.addEventListener("mousemove", function(evt) {
         clearInterval(outintv);
 		slider.style.right = 'auto';
         
-                     console.log(min + " " + mouseX);
        if(mouseX >= min){
             if(propFlt(slider.style.left) < mouseX-3){
                 slider.style.left = propFlt(slider.style.left)+1 + "px";
