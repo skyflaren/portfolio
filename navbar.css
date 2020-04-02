@@ -1,4 +1,4 @@
-.navbar{
+#navbar{
     font-family: 'Montserrat', sans-serif;
     width: 100%;
     height: 70px;
@@ -9,13 +9,13 @@
     color: var(--red0);
 }
 
-.navbar-bkg{
+#navbar-bkg{
     position: absolute;
     left: 0px;
     top: 0px;
     height: 70px;
     width: 100%;
-    background-color: var(--red25);
+    background-color: var(--salmon);
 }
 
 .item-navbar{
@@ -28,11 +28,12 @@
     position: relative;
     display: inline-block;
 
-    opacity: 0.7;
+    opacity: 0.68;
 }
 
 .item-navbar:hover{
     opacity: 1.2;
+    cursor:pointer;
 }
 
 .boutique-navbar{
@@ -58,7 +59,7 @@
 	display: none;
 }
 
-.bar {
+#bar {
 	float:right;
     background-color: #db735e;
 }

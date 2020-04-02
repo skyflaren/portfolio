@@ -1,11 +1,12 @@
 let slider = document.getElementById("slider");
 let nav = document.getElementById("navbar");
+let sw = 8;
 
-slider.style.width = "6px";
+slider.style.width = sw+"px";
 
 nav.addEventListener("mouseenter",function (evt) {
 	slider.style.display="block";
-	slider.style.left = evt.clientX -3 + "px";
+	slider.style.left = evt.clientX - (sw/2) + "px";
 	slider.style.right = "auto";
 });
 
@@ -19,7 +20,7 @@ for (let item of document.getElementsByClassName("item-navbar")) {
 	item.addEventListener("mouseenter", function(evt){
 		let mouseX = evt.clientX;
 		let coord = item.getBoundingClientRect();
-		slider.style.width="6px";
+		slider.style.width = sw+"px";
                           
         clearInterval(inintv);
 		inintv = setInterval(function(){
@@ -73,8 +74,8 @@ for (let item of document.getElementsByClassName("item-navbar")) {
                 slider.style.left = "auto";
             }
 
-            if(Math.round(getSliderWd()) <= 6 || !document.hasFocus || inintv){
-                slider.style.width = "6px";
+            if(Math.round(getSliderWd()) <= sw || !document.hasFocus || inintv){
+                slider.style.width = sw+"px";
                               
                 if(slideLeft){
                     slider.style.left = Math.round(coord.left)+"px";
@@ -112,17 +113,17 @@ nav.addEventListener("mousemove", function(evt) {
 		slider.style.right = 'auto';
         
        if(mouseX >= min){
-            if(propFlt(slider.style.left) < mouseX-3){
+            if(propFlt(slider.style.left) < mouseX-(sw/2)){
                 slider.style.left = propFlt(slider.style.left)+1 + "px";
             }
-            else if(propFlt(slider.style.left) > mouseX-3){
+            else if(propFlt(slider.style.left) > mouseX-(sw/2)){
                 slider.style.left = propFlt(slider.style.left)-1 + "px";
             }
-            else slider.style.left = mouseX-3 + "px";
+            else slider.style.left = mouseX-(sw/2) + "px";
         }
-        else slider.style.left = mouseX-3 + "px";
+        else slider.style.left = mouseX-(sw/2) + "px";
 
-        slider.style.width = "6px";
+        slider.style.width = sw+"px";
 	}
 });
 
