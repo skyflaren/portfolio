@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,300i,400,700,900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,400i,700,900&display=swap');
+
+:root {
+    /* dark grey */
+    --gry1: #454242;
+    /* mid grey */
+    --gry2: #cfcbcb;
+    /* light grey */
+    --gry3: #f4f4f4;
+    
+    --red0: #6b291a;
+    /* dark red */
+    --red1: #854435;
+    /* mid red */
+    --red2: #cd5a42;
+    /* light red */
+    --red3: #e1997c;
+    /*alternate mid red*/
+    --red25: #db735e;
+}
+
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.text{
+    color: white;
+}
+
+body{
+    margin: 0;
+}
+
+
+
+a{
+    text-decoration: none;
+}
+/*a:link, a:visited {*/
+/*    text-decoration-line: none;*/
+/*}*/
+/*a:hover {*/
+/*    text-decoration-line: none;*/
+/*    color: var(--red1);*/
+/*}*/
+
+.navbar{
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+    height: 70px;
+/*    left: 0px;*/
+/*    position: absolute;*/
+/*    background-color: var(--red25);*/
+
+    display: flex;
+    -webkit-flex-direction: row;
+    flex-direction: row-reverse;
+	color: var(--red0);
+    /* justify-content: space-around; */
+}
+
+.navbar-bkg{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    height: 70px;
+    width: 100%;
+    background-color: var(--red25);
+}
+
+.item-navbar{
+    font-weight: 400;
+    color: var(--navbartext);
+    padding: 25px 0px 0px;
+    margin: 0px 30px;
+
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+}
+
+.boutique-navbar{
+    font-weight: 700;
+}
+
+.home-logo{
+    order:1;
+    height: 28px;
+    margin: 0px 20px;
+    position: absolute;
+    left: 10px;
+    top: -5px;
+/*    justify-content: center;*/
+/*    align-items: center;*/
+}
+
+.home-logo:hover{
+    opacity: 0.8;
+}
+

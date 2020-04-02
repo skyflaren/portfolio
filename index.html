@@ -1,37 +1,24 @@
-<!DOCTYPE html>
+<html>
+    <!DOCTYPE html>
     <head>
-        <title>Justin Lu | home</title>
-
-        <link rel="stylesheet" href="style.css">
-        <link href="https://fonts.googleapis.com/css?family=Raleway:300,300i,400,700,900&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,400i,700,900&display=swap" rel="stylesheet">
-            
-    </head>
+        <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width">
+                <title>Justin Lu | home</title>
+                <link href="base.css" rel="stylesheet" type="text/css" />
+                <link href="style.css" rel="stylesheet" type="text/css" />
+                </head>
     <body>
-        <div class="all">
-            <div class="navbar">
-                <a class="home-logo" href="index.html"><img src="img/justinLuLogo-red.svg"></a>
-                <a class="boutique-navbar item-navbar" href="index.html">BOUTIQUE</a>
-                <a class="item-navbar" href="index.html">CONTACT</a>
-                <a class="item-navbar" href="index.html">GALLERY</a>
+        <div class="bar">
+            <div class="navbar-bkg">
+                <div id="navbar" class="navbar">
+                    <img class="home-logo item-navbar" src="img/justinLuLogo-red.svg"/>
+                    <a class="boutique-navbar item-navbar">BOUTIQUE</a>
+                    <a class="item-navbar">CONTACT</a>
+                    <a class="item-navbar">GALLERY</a>
+                </div>
             </div>
+            <div id="slider"></div>
         </div>
+        <script src="slider.js"></script>
     </body>
-
-
-
-
-	<!-- <script> -->
-
-	<!--onmouseenter="document.getElementById('dark-logo').style.display = 'block'; this.style.display='none';"-->
-	<!--onmouseleave="document.getElementById('{{ img_id }}-hover').style.display = 'none'; this.style.display='block'; data-aspectratio='{{ featured.featured_image.aspect_ratio }}' data-sizes="auto""-->
-
-
-
-	<!--onmouseenter="this.style.display='none'  document.getElementById('red-logo').style.display = 'block';"-->
-
-
-	<!--onmouseleave="document.getElementById('dark-logo').style.display = 'none'; this.style.display='block';"-->
-	<!-- </script> -->
-
 </html>
