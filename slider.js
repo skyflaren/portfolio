@@ -102,7 +102,7 @@ nav.addEventListener("mousemove", function(evt) {
 	for (let item of document.getElementsByClassName("item-navbar")) { 
 		let coord = item.getBoundingClientRect();
                      
-        min = (coord.left < min || min == 0 ? coord.left : min);
+        min = (coord.left < min || min == 0 || Math.round(min) == 30 ? coord.left : min);
 		inbtwn &= (mouseX+1 < coord.left || mouseX-1 > coord.right); 
 	}
                      
@@ -112,6 +112,7 @@ nav.addEventListener("mousemove", function(evt) {
         clearInterval(outintv);
 		slider.style.right = 'auto';
         
+                     console.log(min + " " + mouseX);
        if(mouseX >= min){
             if(propFlt(slider.style.left) < mouseX-3){
                 slider.style.left = propFlt(slider.style.left)+1 + "px";
@@ -122,6 +123,7 @@ nav.addEventListener("mousemove", function(evt) {
             else slider.style.left = mouseX-3 + "px";
         }
         else slider.style.left = mouseX-3 + "px";
+
         slider.style.width = "6px";
 	}
 });
