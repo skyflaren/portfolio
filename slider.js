@@ -84,6 +84,7 @@ for (let item of document.getElementsByClassName("item-navbar")) {
                 else {
                     slider.style.right = Math.round(window.innerWidth - coord.right)+"px";
                     slider.style.left = "auto";
+                              console.log(slider.style.right + " " + window.innerWidth + " " + coord.right + " " + slider.style.left);
                 }
                 clearInterval(outintv);
                 outintv = false;
@@ -98,6 +99,7 @@ nav.addEventListener("mousemove", function(evt) {
 	let inbtwn = true;
 	let mouseX = evt.clientX;
     let min = 0;
+//     console.log(propFlt(slider.style.left) + " " + mouseX);
                      
 	for (let item of document.getElementsByClassName("item-navbar")) { 
 		let coord = item.getBoundingClientRect();
@@ -112,17 +114,14 @@ nav.addEventListener("mousemove", function(evt) {
         clearInterval(outintv);
 		slider.style.right = 'auto';
         
+       console.log(propFlt(slider.style.left) + " " + mouseX);
        if(mouseX >= min){
-            if(propFlt(slider.style.left) < mouseX-(sw/2)){
-                slider.style.left = propFlt(slider.style.left)+1 + "px";
-            }
-            else if(propFlt(slider.style.left) > mouseX-(sw/2)){
-                slider.style.left = propFlt(slider.style.left)-1 + "px";
+            if(propFlt(slider.style.left) < mouseX-(sw/2) || propFlt(slider.style.left) > mouseX-(sw/2)){
+                slider.style.left = (propFlt(slider.style.left) + mouseX)/2 + "px";
             }
             else slider.style.left = mouseX-(sw/2) + "px";
         }
-        else slider.style.left = mouseX-(sw/2) + "px";
-
+        else slider.style.left = (propFlt(slider.style.left) + mouseX)/2 - (sw/2) + "px";
         slider.style.width = sw+"px";
 	}
 });
