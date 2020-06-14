@@ -4,7 +4,7 @@
     height: 70px;
     
     display: flex;
-    -webkit-flex-direction: row;
+    -webkit-flex-direction: row-reverse;
     flex-direction: row-reverse;
     color: var(--red0);
 }
@@ -19,15 +19,6 @@
 }
 
 .item-navbar{
-    font-weight: 500;
-    color: var(--navbartext);
-    padding: 25px 0px 0px;
-    margin: 0px 30px;
-    
-    text-decoration: none;
-    position: relative;
-    display: inline-block;
-
     opacity: 0.68;
 }
 
@@ -36,18 +27,52 @@
     cursor:pointer;
 }
 
-.boutique-navbar{
+.any-item{
+    font-weight: 500;
+    color: var(--navbartext);
+    padding: 25px 0px 0px;
+    margin: 0px 30px;
+    
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+}
+
+.bold-navbar{
     font-weight: 700;
+    cursor: default;
+}
+
+#home-wrap .home-logo{
+    left: 0px !important;
 }
 
 .home-logo{
     order:1;
     height: 28px;
-    margin: 0px 20px;
+    margin: 0px;
     position: absolute;
-    left: 10px;
-    top: -5px;
-    
+    left: 20px;
+    top: -6px;
+}
+.home-name{
+    order:1;
+    height: 28px;
+    margin: 0px;
+    position: absolute;
+    margin-left: 30px;
+
+    font-weight: 700;
+    color: var(--navbartext);
+}
+
+#home-wrap{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    height: 70px;
+    width: 117px;
+    left: 20px;
 }
 
 #slider {

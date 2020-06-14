@@ -1,0 +1,175 @@
+/*
+    Cards inspired by Bootstrap cards
+    https://getbootstrap.com/docs/4.0/components/card/
+
+    Cards flickering on Safari debugging help
+    https://github.com/kenwheeler/slick/issues/1020
+*/
+
+.cards-all{
+    margin-top: 30px;
+    padding: 10px;
+}
+
+.card {
+    position: relative;
+    display: inline-block;
+    flex-direction: column;
+    border: 1px solid #d9d9d9;
+    border-radius: 0.25rem;
+    margin: 10px;
+    pointer-events: all;
+    
+    width: auto;
+    max-width: 30rem;
+
+    display: -webkit-box;
+    display: -ms-flexbox;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+}
+
+.card-body {
+    position: static !important;
+
+    font-family: 'Roboto', sans-serif;
+    flex: 1 1 auto;
+    padding: 1.25rem;
+
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 auto;
+}
+
+.card-title {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: 20;
+    margin-bottom: 0.75rem;
+}
+
+.card-text{
+    color: var(--gry15);
+}
+
+.card-link{
+    position: relative;
+    pointer-events: all;
+    z-index: 100;
+    color: var(--red1);
+}
+
+.card-link + .card-link {
+    margin-left: 1.25rem;
+}
+
+.card-img-overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1.25rem;
+    opacity: 0;
+    
+    color: #FFF;
+    z-index: 2;
+    text-align: center;
+    justify-content: center;
+
+    transition: opacity 0.2s;
+    -webkit-transition: opacity 0.2s;
+}
+
+.card:hover .card-img-overlay{
+    opacity: 1;
+    z-index: 2;
+}
+
+.overlay-color{
+    border-top-left-radius: calc(0.25rem - 1px);
+    border-top-right-radius: calc(0.25rem - 1px);
+    background-color: #555;
+    transform: scale(0.975);
+    transition: all 0.2s;
+
+    -webkit-transition: all 0.2s;
+    -webkit-transform: scale(0.975), translateZ(0);
+}
+
+.card:hover .overlay-color{
+    background-color: var(--red1);
+    transform: scale(1);
+
+    -webkit-transform: scale(1);
+}
+
+.card-thumb {
+    width: 100%;
+    border-top-left-radius: calc(0.25rem - 1px);
+    border-top-right-radius: calc(0.25rem - 1px);
+    opacity: 0.9;
+    transition: opacity 0.2s;
+    backface-visibility: hidden;
+
+    -webkit-opacity: 0.9;
+    -webkit-transition: opacity 0.2s;
+    -webkit-backface-visibility: hidden;
+}
+
+.card:hover .card-thumb{
+    opacity: 0.1;
+
+    -webkit-opacity: 0.1;
+}
+
+.card-columns .card {
+    margin-bottom: 0.75rem;
+    orphans: 1;
+    widows: 1;
+
+    display: flex;
+    page-break-inside: avoid;
+    break-inside: avoid;
+}
+
+
+
+@media (min-width: 1600px) {
+	.card-columns {
+		columns: 4 !important;
+        -webkit-column-count: 4;
+        -moz-column-count: 4;
+        column-count: 4;
+	}
+}
+
+@media (max-width: 1600px) {
+	.card-columns {
+		columns: 3 !important;
+        -webkit-column-count: 3;
+        -moz-column-count: 3;
+        column-count: 3;
+	}
+}
+
+@media (max-width: 1200px) {
+	.card-columns {
+		columns: 2 !important;
+        -webkit-column-count: 2;
+        -moz-column-count: 2;
+        column-count: 2;
+	}
+}
+
+@media (max-width: 800px) {
+	.card-columns {
+		columns: 1 !important;
+        -webkit-column-count: 1;
+        -moz-column-count: 1;
+        column-count: 1;
+	}
+    .card{
+        margin: auto auto 20px auto !important;
+    }
+}

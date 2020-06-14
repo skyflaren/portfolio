@@ -1,2 +1,0 @@
-# web
-a photography portfolio

@@ -1,9 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway:300,400,400i,500,700,900&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,400i,500,700,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;900&display=swap');
 
 :root {
     /* dark grey */
     --gry1: #454242;
+    /* text gray */
+    --gry15: #5e5b5b;
     /* mid grey */
     --gry2: #cfcbcb;
     /* light grey */
@@ -20,6 +23,8 @@
     --red25: #db735e;
     /*paler than --red25*/
     --salmon: #e8937b;
+
+    --navbartext: var(--red0);
 }
 
 * {
@@ -36,4 +41,15 @@ body{
 
 a{
     text-decoration: none;
+}
+
+span{
+    text-decoration: none;
+}
+
+hr{
+    margin: 0px 40px;
+    height: 1px;
+    border: none;
+    background-color: var(--gry2);
 }
