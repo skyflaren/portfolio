@@ -45,6 +45,7 @@
 
 .topic-rightmost{
     margin-right: 15px;
+    font-weight: 700;
 }
 
 #topic-name{
@@ -54,16 +55,18 @@
     color: var(--red1);
 
     display: inline-block;
-    margin: 50px 0px 15px 40px;
+    margin: 50px 50px 20px 50px;
 }
 
 #topic-para{
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
-    font-size: 16;
+    font-size: 20;
     color: var(--gry1);
     opacity: 0.8;
     
     display: inline-block;
-    margin: 15px 0px 0px 40px;
+    margin: 15px 50px 0px 50px;
+    line-height: 1.6;
 }
+
