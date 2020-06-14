@@ -29,16 +29,49 @@ for (let topic of document.getElementsByClassName("topic-item")){
             this.style.fontWeight = "700";
             name.innerHTML = "Recursion";
             para1.innerHTML = "Incursion";
+            para2.style.display = "none";
+            para3.style.display = "none";
+            para4.style.display = "none";
+            para5.style.display = "none";
+            para6.style.display = "none";
+            para7.style.display = "none";
+            para8.style.display = "none";
+            para9.style.display = "none";
+            para10.style.display = "none";
+            para11.style.display = "none";
+            para12.style.display = "none";
         }
         else if(this.innerHTML == "Searching &amp; Sorting"){
             this.style.fontWeight = "700";
             name.innerHTML = "Searching &amp; Sorting";
             para1.innerHTML = "Merchant &amp Boring";
+            para2.style.display = "none";
+            para3.style.display = "none";
+            para4.style.display = "none";
+            para5.style.display = "none";
+            para6.style.display = "none";
+            para7.style.display = "none";
+            para8.style.display = "none";
+            para9.style.display = "none";
+            para10.style.display = "none";
+            para11.style.display = "none";
+            para12.style.display = "none";
         }
         else if(this.innerHTML == "Arrays &amp; Arraylists"){
             this.style.fontWeight = "700";
             name.innerHTML = "Arrays &amp; Arraylists";
             para1.innerHTML = "Allies &amp Armenia";
+            para2.style.display = "none";
+            para3.style.display = "none";
+            para4.style.display = "none";
+            para5.style.display = "none";
+            para6.style.display = "none";
+            para7.style.display = "none";
+            para8.style.display = "none";
+            para9.style.display = "none";
+            para10.style.display = "none";
+            para11.style.display = "none";
+            para12.style.display = "none";
         }
     })
 
