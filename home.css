@@ -2,11 +2,9 @@
     background-color: var(--red0);
     
     width: 100%;
-    height: calc(8vw + 60px);   
-    padding-top: 35px;
-
+    height: calc(8vw + 100px);   
+    
     position: relative;
-    margin-top: -5px;
 }
 
 .explore-parent:hover .explore{
@@ -21,7 +19,7 @@
     width: 98%;
     
     padding: 0px;
-    margin-top: 30px;
+    margin-top: 50px;
     position: absolute;
     z-index: 1;
 
@@ -40,4 +38,67 @@
     position: relative;
     margin: auto;
     width: 45%;
+}
+
+
+.introduction{
+    background-color: var(--gry15);
+    position: relative;
+    z-index: 0;
+    margin-top: -5px;
+}
+
+.intro-langs{
+    position: relative;
+    z-index: 0;
+}
+
+.intro-title, .intro-bar, .intro-para{
+    position: absolute;
+    z-index: 2;
+    left: 45%;
+}
+
+.intro-title{
+    top: calc(7vw + 7%);
+    font-weight: 700;
+    font-size: calc(3vw + 20px);
+    margin-left: -0.25vw;
+}
+
+.intro-bar{
+    top: calc(6vw + 10.5% + 2*calc(3vw + 20px) + 5px);
+    margin: 0px;
+
+    width: 5vw;
+    height: 1%;
+    background-color: var(--red2);
+}
+
+.intro-para{
+    font-family: 'Roboto', sans serif;
+    top: calc(12vw + 9% + 50px);
+    font-weight: 300;
+    font-size: calc(2vw);
+
+    color: white;
+}
+
+.intro-box{
+    position: absolute;
+    z-index: 1;
+    top: calc(6vw + 10.5% + 2*calc(3vw + 20px) + 5px);
+    margin: 0px;
+
+    width: 5vw;
+    height: 50px;
+    background-color: var(--red2);
+}
+
+.intro-thumbn{
+    position: sticky;
+    z-index: 4;
+    margin-top: 30px;
+    top: 0px;
+    width: 15%;
 }

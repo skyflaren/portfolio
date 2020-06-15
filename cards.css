@@ -56,11 +56,15 @@
     position: relative;
     pointer-events: all;
     z-index: 100;
-    color: var(--red1);
+    color: var(--red2);
 }
 
 .card-link + .card-link {
     margin-left: 1.25rem;
+}
+
+.card-link:hover{
+    color: var(--red0);
 }
 
 .card-img-overlay {
