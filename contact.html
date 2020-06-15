@@ -1,0 +1,50 @@
+<!-- Creating a form: https://www.campaignmonitor.com/blog/email-marketing/2019/04/how-to-create-an-html-form-that-emails-responses-to-your-inbox/ -->
+
+<html>
+    <!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Justin Lu | projects</title>
+        <link href="base.css" rel="stylesheet" type="text/css">
+        <link href="navbar.css" rel="stylesheet" type="text/css">
+        <link href="form.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <div style="position:absolute;left:0px;top:0px;width:100%;height:70px"></div>    
+
+        <div id="bar">
+            <div id="navbar-bkg">
+                <div id="navbar">
+                    <a href="index.html"><div class="item-navbar" id="home-wrap">
+                        <span class="home-name any-item">JUSTIN LU</span>
+                        <img class="home-logo any-item" draggable="false" src="img/justinLuLogo-red.svg"/>
+                    </div></a>
+                    <a class="any-item bold-navbar">CONTACT</a>
+                    <a class="any-item item-navbar" href="lessons.html">LESSONS</a>
+                    <a class="any-item item-navbar" href="projects.html">PROJECTS</a>
+                </div>
+            </div>
+            <div id="slider"></div>
+            <script src="slider.js"></script>
+        </div>
+
+        <div class="gradient-masthead">
+            <p class="header-title">Contact</p>
+        </div>
+
+        <div class="form-section">
+            <form class="contact-form" method="POST"  action="mailto:justinluphoto@gmail.com">
+                <div class="input-items">
+                    <input class="input-field" name="name" type="text" placeholder="Name" required></br>
+                    <input class="input-field" name="email" type="text" placeholder="Email" required></br>
+                    <textarea class="input-field" name="message" type="text" rows="5" placeholder="Maybe an inquiry, some positive feedback, or a snarky comment" required></textarea>
+                </div>
+
+                <div class="submit-wrap">
+                    <input class="submit-button input-field" type="submit" value="SUBMIT">
+                </div>
+            </form>
+        </div>
+    </body>
+</html>

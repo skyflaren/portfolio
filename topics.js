@@ -99,4 +99,17 @@ function oop(){
             para10.innerHTML = 'Going back to our example, let us create our “Thermometer” class. Inside of its constructor, we could have it accept two variables, a String loc, and an int temp. Declared as private instance variables, we could have also String location and int temperature, and then assign the value of loc to location, and temp to temperature. We could next create “getTemperature()” and “setTemperature()” methods, the first returning an integer, but not requiring any parameters, and the second not returning anything, but requiring an int temp parameter (representing the temperature to set the Thermometer object to). ';
             para11.innerHTML = 'To achieve our goal, we can create our instance of the Thermometer class, and then call the instance method getTemperature, adding 5 and then passing that value to setTemperature.';
             para12.style.display = "none";
+
+            para2.style.display = "inherit";
+            para2.style.display = "inherit";
+            para3.style.display = "inherit";
+            para4.style.display = "inherit";
+            para5.style.display = "inherit";
+            para6.style.display = "inherit";
+            para7.style.display = "inherit";
+            para8.style.display = "inherit";
+            para9.style.display = "inherit";
+            para10.style.display = "inherit";
+            para11.style.display = "inherit";
+            para12.style.display = "none";
 }

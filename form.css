@@ -1,0 +1,84 @@
+.form-section{
+    padding: 50px;
+    background-color: var(--gry3);
+    color: var(--gry2);
+}
+
+.contact-form{
+    color: var(--red0);
+    display: flex;
+}
+
+.input-field{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 28px;
+    border: none;
+    color: var(--gry1);
+
+    width: 100%;
+    padding: 15px 0px 15px 15px;
+    margin: 5px auto;
+}
+
+.input-items{
+    width: 70%;
+    border-right: 2px solid var(--gry2);
+    padding-right: 4%;
+    margin-right: 4%;
+}
+
+.submit-button{
+    padding: 30px;
+
+    font-weight: 700;
+    color: var(--gry1);
+    background-color: var(--gry3);
+    border: 2px solid var(--gry1);
+
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+}
+
+.submit-button:hover{
+    background-color: var(--gry1);
+    color: var(--gry3);
+    cursor: pointer;
+}
+
+.submit-wrap{
+    margin: auto;
+}
+
+input{
+    background-color: white;
+    outline-color: var(--red3);
+    -webkit-appearance:none;
+}
+
+textarea{
+    background-color: white;
+    outline-color: var(--red25);
+    -webkit-appearance:none;
+}
+
+input:focus{
+    background-color: white;
+    color: var(--red1);
+}
+
+textarea:focus{
+    background-color: white;
+    color: var(--red1);
+}
+
+/* ::selection {
+    color: var(--red25);
+}
+
+::-moz-selection{
+    color: var(--red25);
+} */
+
+
+/* input[type='text'] { font-size: 59px; } */
