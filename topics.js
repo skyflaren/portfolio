@@ -98,9 +98,9 @@ function oop(){
             para9.innerHTML = 'Recapping off the general anatomy of a class, we have the class header, which normally contains the keyword “class”, followed by the name of the class (eg. class Thermometer). We next have two curly braces to set the scope, and then the declaration of our PIVs. After this, we will have our constructor, and potential overloaded constructors, which set up our class instance and run right after it’s made. Following the constructor(s), we could have our accessor and mutator methods which return and change our properties respectively. Finally we could have a toString method, which will be automatically called if our class instance is converted into the context of a string. Near the end, we would have any other case-by-case methods specific to the use case, (eg. replaceBatteries(), changeLanguage(), etc. for our Thermometer class).';
             para10.innerHTML = 'Going back to our example, let us create our “Thermometer” class. Inside of its constructor, we could have it accept two variables, a String loc, and an int temp. Declared as private instance variables, we could have also String location and int temperature, and then assign the value of loc to location, and temp to temperature. We could next create “getTemperature()” and “setTemperature()” methods, the first returning an integer, but not requiring any parameters, and the second not returning anything, but requiring an int temp parameter (representing the temperature to set the Thermometer object to). ';
             para11.innerHTML = 'To achieve our goal, we can create our instance of the Thermometer class, and then call the instance method getTemperature, adding 5 and then passing that value to setTemperature.';
-            para12.style.display = "none";
+            para12.innerHTML = "Speedround - Inheritance: a subclass (extends the parent) obtains a property or action of a parent. Abstract: a keyword that allows you to define a method header, without writing out the actual code, and leaving that to subclasses to flush out (if there is one abstract method, the entire class is an abstract class, and the keyword abstract should be added to the class header). Interfaces: A class consisting only of abstract methods, where all methods are to be implemented in subclasses. Polymorphism: Allows a parent class to take on the value of a child class, where if a parent class is assigned the value of a child class and an overridden method in the child class is called, even though the original datatype was the parent class, the child class’ method will be used. Overriding methods: Allows for the same method to be in a child and parent class, where the most specific/recently overridden method will be used, or where the same method has different parameters in the method header.";
 
-            para2.style.display = "inherit";
+            para1.style.display = "inherit";
             para2.style.display = "inherit";
             para3.style.display = "inherit";
             para4.style.display = "inherit";
@@ -111,5 +111,5 @@ function oop(){
             para9.style.display = "inherit";
             para10.style.display = "inherit";
             para11.style.display = "inherit";
-            para12.style.display = "none";
+            para12.style.display = "inherit";
 }

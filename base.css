@@ -1,3 +1,5 @@
+/* Made gradient using https://cssgradient.io */
+
 @import url('https://fonts.googleapis.com/css?family=Raleway:300,400,400i,500,700,900&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,400i,500,700,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;900&display=swap');
@@ -52,4 +54,20 @@ hr{
     height: 1px;
     border: none;
     background-color: var(--gry2);
+}
+
+.gradient-masthead{
+    height: 500px;
+    width: 100%;
+    
+    background: rgb(133,68,53);
+    background: linear-gradient(85deg, rgba(133,68,53,1) 0%, rgba(209,107,86,1) 100%);
+}
+
+.header-title{
+    font-family: 'Montserrat', sans-serif;
+    padding: calc(370px + 6vh - 6vw) 0px 0px 50px;
+    color: white;
+    font-weight: 700px;
+    font-size: calc(5vw + 50px);
 }
