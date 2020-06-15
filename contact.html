@@ -34,7 +34,8 @@
         </div>
 
         <div class="form-section">
-            <form class="contactform" method="POST"  action="mailto:wabasabi359@gmail.com">
+            <script src="mailto.js"></script>
+            <form class="contactform" method="POST" action="">
                 <div class="input-items">
                     <input class="input-field" name="name" type="text" placeholder="Name" required></br>
                     <input class="input-field" name="email" type="text" placeholder="Email" required></br>
@@ -42,7 +43,7 @@
                 </div>
 
                 <div class="submit-wrap">
-                    <input class="submit-button input-field" type="submit" value="SUBMIT">
+                    <input class="submit-button input-field" type="submit" value="SUBMIT" onclick="mailto()">
                 </div>
             </form>
         </div>
