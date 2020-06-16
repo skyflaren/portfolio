@@ -40,6 +40,7 @@ p{
 }
 
 code{
+    width: 100vw !important;
     white-space: pre-wrap;
 }
 
