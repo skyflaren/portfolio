@@ -83,7 +83,7 @@ hr{
 }
 
 .footer{
-    height: 140px;
+    height: 120px;
     width: 100%;
     background-color: var(--red25);
     display: flex;

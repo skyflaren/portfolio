@@ -1,5 +1,6 @@
 .form-section{
     padding: 50px;
+    padding-bottom: 60px;
     background-color: var(--gry3);
     color: var(--gry2);
 }
