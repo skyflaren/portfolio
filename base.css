@@ -83,7 +83,7 @@ hr{
 }
 
 .footer{
-    height: 120px;
+    height: 180px;
     width: 100%;
     background-color: var(--red25);
     display: flex;
@@ -109,13 +109,12 @@ hr{
     background-color: var(--red2);
     height: 0.5vh;
     width: 10vw;
-    margin: 10px auto 0px;
+    margin: 15px auto 0px;
 }
 
 .foooter-icon-par{
-    margin: 0px auto;
+    margin: 30px auto 0px;
     display: flex;
-    margin-left: 40px;
     
     flex-direction: row;
     -webkit-box-orient: horizontal;
