@@ -85,7 +85,7 @@ hr{
 }
 
 .footer{
-    height: 180px;
+    height: 230px;
     width: 100%;
     background-color: var(--red3);
     display: flex;
@@ -97,6 +97,7 @@ hr{
 }
 
 .footer-title{
+    margin-top: 25px;
     font-size: 18;
     color: var(--red1);
     text-align: center;
@@ -105,7 +106,7 @@ hr{
 
 .footer-title-par{
     margin: 0px auto;
-    padding-top: 30px;
+    padding-top: 40px;
 }
 
 .footer-bar{
@@ -113,23 +114,24 @@ hr{
     height: 0.5vh;
     width: 10vw;
     margin: 15px auto 0px;
-    opacity: 0.5
+    opacity: 0.3;
 }
 
 .foooter-icon-par{
-    margin: 30px auto 0px;
+    margin-top: 15px;
     display: flex;
     
     flex-direction: row;
     -webkit-box-orient: horizontal;
     -ms-flex-direction: row;
+	justify-content:center;
 }
 
 .footer-icon{
-    height: 4vh;
-    width: 4vh;
+    height: 3vh;
+    width: 3vh;
     opacity: 0.2;
-    margin: 2vh;
+    margin: 2vh calc(0.25vh + 0.25vw);
 }
 
 .footer-icon:hover{
