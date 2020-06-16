@@ -42,6 +42,7 @@ p{
 code{
     width: 100vw !important;
     white-space: pre-wrap;
+    word-wrap: break-word;
 }
 
 .text{
@@ -86,7 +87,7 @@ hr{
 .footer{
     height: 180px;
     width: 100%;
-    background-color: var(--red25);
+    background-color: var(--red3);
     display: flex;
     margin: auto;
 
@@ -96,7 +97,8 @@ hr{
 }
 
 .footer-title{
-    color: var(--red0);
+    font-size: 18;
+    color: var(--red1);
     text-align: center;
     padding: 0px 20px;
 }
@@ -107,10 +109,11 @@ hr{
 }
 
 .footer-bar{
-    background-color: var(--red2);
+    background-color: var(--red25);
     height: 0.5vh;
     width: 10vw;
     margin: 15px auto 0px;
+    opacity: 0.5
 }
 
 .foooter-icon-par{
@@ -140,11 +143,14 @@ hr{
     font-size: 15px;
     font-weight: 400;
     text-decoration: none;
-    color: var(--red1);
+    color: var(--gry1);
     margin: 0px 20px;
+
+    opacity: 0.5;
 }
 
 .footer-name:hover{
     text-decoration: none;
     color: var(--red0);
+    opacity: 0.8;
 }

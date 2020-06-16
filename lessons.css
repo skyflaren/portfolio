@@ -73,6 +73,7 @@
     overflow: hidden;
     position: relative;
     width: calc(100vw - 150px);
+    overflow-wrap: break-word;
 }
 
 pre{
@@ -80,8 +81,10 @@ pre{
     border-radius: 0.25rem;
     padding: 15px;
     margin: 20px 0px;
+    overflow-wrap: break-word;
 }
 
 code{
     font-family: monospace;
+    overflow-wrap: break-word;
 }
