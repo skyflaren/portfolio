@@ -11,6 +11,8 @@
     --gry15: #5e5b5b;
     /* mid grey */
     --gry2: #cfcbcb;
+    /*alternate mid grey, gry3 shadow*/
+    --gry25: #ededed;
     /* light grey */
     --gry3: #f4f4f4;
     
@@ -31,6 +33,14 @@
 
 * {
     font-family: 'Montserrat', sans-serif;
+}
+
+p{
+    white-space: pre-wrap;
+}
+
+code{
+    white-space: pre-wrap;
 }
 
 .text{

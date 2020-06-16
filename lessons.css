@@ -55,7 +55,7 @@
     color: var(--red1);
 
     display: inline-block;
-    margin: 50px 50px 20px 50px;
+    padding: 50px 50px 20px 50px;
 }
 
 #topic-para{
@@ -66,7 +66,22 @@
     opacity: 0.8;
     
     display: inline-block;
-    margin: 15px 50px 0px 50px;
+    margin-top: 15px;
+    padding: 0px 50px;
     line-height: 1.6;
+
+    overflow: hidden;
+    position: relative;
+    width: calc(100vw - 150px);
 }
 
+pre{
+    background-color: var(--gry3);
+    border-radius: 0.25rem;
+    padding: 15px;
+    margin: 20px 0px;
+}
+
+code{
+    font-family: monospace;
+}
